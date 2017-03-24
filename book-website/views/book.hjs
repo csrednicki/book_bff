@@ -5,13 +5,15 @@
     <link rel='stylesheet' href='/stylesheets/style.css' />
   </head>
   <body>
-    <esi:include src="https://kwasniew.github.io/menu.html" />
 
+    <header><esi:include src="https://kwasniew.github.io/menu.html" /></header>
+
+    <error><esi:include src="https://kwasniew.github.io/dokument-z-bledem.html" /></error>
 
     <h1>Tytuł książki: {{ title }}</h1>
     <p><img src="{{ thumbnail }}" /></p>
     <p>Opis: {{description}}</p>
 
-<esi:include src="https://kwasniew.github.io/footer.html" />
+    <footer><esi:include src="https://kwasniew.github.io/footer.html" /></footer>
   </body>
 </html>

@@ -12,7 +12,11 @@ var esiMiddleware = require('nodesi').middleware;
 
 var app = express();
 
-app.use(esiMiddleware());
+app.use(esiMiddleware({
+    onError: function(src, error) {
+        return '<!-- '+error+', source: '+src+' -->';
+    }
+}));
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
