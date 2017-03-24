@@ -14,6 +14,8 @@
     <p><img src="{{ thumbnail }}" /></p>
     <p>Opis: {{description}}</p>
 
+    <div class="book-inventory"><esi:include src="http://localhost:3000/stock" /></div>
+
     <footer><esi:include src="https://kwasniew.github.io/footer.html" /></footer>
   </body>
 </html>
