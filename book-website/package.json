@@ -12,6 +12,7 @@
     "express": "~4.14.1",
     "good-guy-http": "1.9.0",
     "hjs": "~0.0.6",
+    "jsonpath": "0.2.11",
     "morgan": "~1.7.0",
     "request": "2.81.0",
     "serve-favicon": "~2.3.2"
