@@ -8,8 +8,11 @@ var bodyParser = require('body-parser');
 var index = require('./routes/index');
 var users = require('./routes/users');
 var book = require('./routes/book');
+var esiMiddleware = require('nodesi').middleware;
 
 var app = express();
+
+app.use(esiMiddleware());
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
